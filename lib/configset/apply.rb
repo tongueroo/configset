@@ -22,7 +22,7 @@ module Configset
 
     def sh(command)
       puts "=> #{command}"
-      # system command
+      system command
     end
 
     def tmp_configset_path
