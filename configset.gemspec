@@ -8,10 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Configset::VERSION
   spec.authors       = ["Tung Nguyen"]
   spec.email         = ["tongueroo@gmail.com"]
-  spec.summary       = "Generated with cli-template tool. Please write a gem summary" # TODO: changeme
-  spec.description   = "Generated with cli-template tool. Write a longer description or delete this line." # TODO: changeme
-  spec.homepage      = "https://github.com/USERNAME/configset" # TODO: changeme
-  spec.license       = ""
+  spec.summary       = "configset cli wrapper"
+  spec.homepage      = "https://github.com/tongueroo/configset"
+  spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
   spec.bindir        = "exe"

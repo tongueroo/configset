@@ -3,12 +3,10 @@ module Configset
     class_option :verbose, type: :boolean
     class_option :noop, type: :boolean
 
-    desc "hello NAME", "Say hello to NAME."
-    long_desc Help.text(:hello)
-    option :from, desc: "from person"
-    def hello(name="you")
-      puts "from: #{options[:from]}" if options[:from]
-      puts "Hello #{name}"
+    desc "apply PATH", "Apply the configset"
+    long_desc Help.text(:apply)
+    def apply(path)
+      Apply.new(options.merge(path: path)).run
     end
 
     desc "completion *PARAMS", "Prints words for auto-completion."
